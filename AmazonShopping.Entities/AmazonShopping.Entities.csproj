@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AmazonShopping.Core\AmazonShopping.Core.csproj" />
+  </ItemGroup>
+
 </Project>

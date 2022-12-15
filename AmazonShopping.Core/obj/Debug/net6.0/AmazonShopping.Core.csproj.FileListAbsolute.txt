@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.AssemblyInfo.cs
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\bin\Debug\net6.0\AmazonShopping.Core.deps.json
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\bin\Debug\net6.0\AmazonShopping.Core.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\bin\Debug\net6.0\AmazonShopping.Core.pdb
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\refint\AmazonShopping.Core.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\AmazonShopping.Core.pdb
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.Core\obj\Debug\net6.0\ref\AmazonShopping.Core.dll

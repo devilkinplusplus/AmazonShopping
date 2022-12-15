@@ -1,0 +1,1421 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\404.html",
+      "PackagePath": "staticwebassets\\admin\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\500.html",
+      "PackagePath": "staticwebassets\\admin\\500.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\blank-page.html",
+      "PackagePath": "staticwebassets\\admin\\blank-page.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\buttons.html",
+      "PackagePath": "staticwebassets\\admin\\buttons.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\charts.html",
+      "PackagePath": "staticwebassets\\admin\\charts.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\compose.html",
+      "PackagePath": "staticwebassets\\admin\\compose.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\SidebarNav.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\SidebarNav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\animate.css",
+      "PackagePath": "staticwebassets\\admin\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\admin\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\custom.css",
+      "PackagePath": "staticwebassets\\admin\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\export.css",
+      "PackagePath": "staticwebassets\\admin\\css\\export.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\admin\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\graph.css",
+      "PackagePath": "staticwebassets\\admin\\css\\graph.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\jqcandlestick.css",
+      "PackagePath": "staticwebassets\\admin\\css\\jqcandlestick.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\monthly.css",
+      "PackagePath": "staticwebassets\\admin\\css\\monthly.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\admin\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\forms.html",
+      "PackagePath": "staticwebassets\\admin\\forms.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\general.html",
+      "PackagePath": "staticwebassets\\admin\\general.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\grids.html",
+      "PackagePath": "staticwebassets\\admin\\grids.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\icons.html",
+      "PackagePath": "staticwebassets\\admin\\icons.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\a.png",
+      "PackagePath": "staticwebassets\\admin\\images\\a.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\i1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\i1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\i2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\i2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\i3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\i3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\i4.png",
+      "PackagePath": "staticwebassets\\admin\\images\\i4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\img-sprite.png",
+      "PackagePath": "staticwebassets\\admin\\images\\img-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\img1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\lock.png",
+      "PackagePath": "staticwebassets\\admin\\images\\lock.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\mail.png",
+      "PackagePath": "staticwebassets\\admin\\images\\mail.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\search-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\slider7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\slider7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\tick.png",
+      "PackagePath": "staticwebassets\\admin\\images\\tick.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\user.png",
+      "PackagePath": "staticwebassets\\admin\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\images\\weather.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\weather.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\inbox.html",
+      "PackagePath": "staticwebassets\\admin\\inbox.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\index.html",
+      "PackagePath": "staticwebassets\\admin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\Chart.bundle.js",
+      "PackagePath": "staticwebassets\\admin\\js\\Chart.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\Chart.js",
+      "PackagePath": "staticwebassets\\admin\\js\\Chart.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\SidebarNav.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\SidebarNav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\SimpleChart.js",
+      "PackagePath": "staticwebassets\\admin\\js\\SimpleChart.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\amcharts.js",
+      "PackagePath": "staticwebassets\\admin\\js\\amcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\chartinator.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chartinator.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\classie.js",
+      "PackagePath": "staticwebassets\\admin\\js\\classie.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\custom.js",
+      "PackagePath": "staticwebassets\\admin\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\export.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\export.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\images\\dragIconRoundBig.svg",
+      "PackagePath": "staticwebassets\\admin\\js\\images\\dragIconRoundBig.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\images\\lens.svg",
+      "PackagePath": "staticwebassets\\admin\\js\\images\\lens.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\index.js",
+      "PackagePath": "staticwebassets\\admin\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\index1.js",
+      "PackagePath": "staticwebassets\\admin\\js\\index1.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\index2.js",
+      "PackagePath": "staticwebassets\\admin\\js\\index2.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\jquery-1.11.1.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery-1.11.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\jquery.jqcandlestick.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.jqcandlestick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\jquery.nicescroll.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.nicescroll.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\light.js",
+      "PackagePath": "staticwebassets\\admin\\js\\light.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\metisMenu.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\metisMenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\modernizr.custom.js",
+      "PackagePath": "staticwebassets\\admin\\js\\modernizr.custom.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\monthly.js",
+      "PackagePath": "staticwebassets\\admin\\js\\monthly.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\admin\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\pie-chart.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pie-chart.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\admin\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\serial.js",
+      "PackagePath": "staticwebassets\\admin\\js\\serial.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\utils.js",
+      "PackagePath": "staticwebassets\\admin\\js\\utils.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\js\\validator.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\validator.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\login.html",
+      "PackagePath": "staticwebassets\\admin\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\media.html",
+      "PackagePath": "staticwebassets\\admin\\media.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\signup.html",
+      "PackagePath": "staticwebassets\\admin\\signup.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\tables.html",
+      "PackagePath": "staticwebassets\\admin\\tables.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\typography.html",
+      "PackagePath": "staticwebassets\\admin\\typography.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\validation.html",
+      "PackagePath": "staticwebassets\\admin\\validation.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\w3layouts-License.txt",
+      "PackagePath": "staticwebassets\\admin\\w3layouts-License.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\admin\\widgets.html",
+      "PackagePath": "staticwebassets\\admin\\widgets.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\404.html",
+      "PackagePath": "staticwebassets\\eTemplate\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\about-us.html",
+      "PackagePath": "staticwebassets\\eTemplate\\about-us.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-2-column.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-2-column.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-3-column.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-3-column.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-audio-format.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-audio-format.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-details-left-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-details-left-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-details-right-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-details-right-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-details.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-details.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-gallery-format.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-gallery-format.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-left-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-left-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-list-left-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-list-left-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-list-right-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-list-right-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-list.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-list.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-right-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-right-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\blog-video-format.html",
+      "PackagePath": "staticwebassets\\eTemplate\\blog-video-format.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\cart.html",
+      "PackagePath": "staticwebassets\\eTemplate\\cart.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\checkout.html",
+      "PackagePath": "staticwebassets\\eTemplate\\checkout.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\compare.html",
+      "PackagePath": "staticwebassets\\eTemplate\\compare.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\contact.html",
+      "PackagePath": "staticwebassets\\eTemplate\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\animate.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\fontawesome-stars.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\fontawesome-stars.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\helper.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\helper.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_glass_75_d0e5f5_1x400.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_glass_75_d0e5f5_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_glass_85_dfeffc_1x400.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_glass_85_dfeffc_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_glass_95_fef1ec_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_217bc0_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_217bc0_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_2e83ff_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_2e83ff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_469bdd_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_469bdd_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_6da8d5_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_6da8d5_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_cd0a0a_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_cd0a0a_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_d8e7f3_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_d8e7f3_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\images\\ui-icons_f9bd01_256x240.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\images\\ui-icons_f9bd01_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\meanmenu.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\slick.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\css\\venobox.css",
+      "PackagePath": "staticwebassets\\eTemplate\\css\\venobox.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\faq.html",
+      "PackagePath": "staticwebassets\\eTemplate\\faq.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfont3e6e.woff2",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfont3e6e.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\eTemplate\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\about-us\\icon\\1.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\about-us\\icon\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\about-us\\icon\\2.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\about-us\\icon\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\about-us\\icon\\3.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\about-us\\icon\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\about-us\\icon\\4.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\about-us\\icon\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\1_1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\1_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\1_2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\1_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\1_3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\1_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\1_4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\1_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\1_5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\1_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\2_6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\2_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\3_1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\3_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\3_2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\3_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\featured-banner.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\featured-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\bg-banner\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\bg-banner\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\bg-banner\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\bg-banner\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\bg-banner.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\bg-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\large-size\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\large-size\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\large-size\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\large-size\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\blog-banner\\large-size\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\blog-banner\\large-size\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\featured-product\\6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\featured-product\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\flag-icon\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\flag-icon\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\flag-icon\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\flag-icon\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\li-bg-menu.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\li-bg-menu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\logo\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\logo\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\logo\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\logo\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\payment\\1.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\payment\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product-details\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product-details\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product-details\\admin.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product-details\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product-details\\user.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product-details\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\10.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\11.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\12.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\13.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\7.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\8.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\large-size\\9.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\large-size\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\product\\small-size\\6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\product\\small-size\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\shipping-icon\\1.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\shipping-icon\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\shipping-icon\\2.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\shipping-icon\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\shipping-icon\\3.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\shipping-icon\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\shipping-icon\\4.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\shipping-icon\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\10.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\11.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\12.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\4.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\5.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\6.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\7.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\8.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\slider\\9.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\slider\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\static-top\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\static-top\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\team\\1.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\team\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\team\\2.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\team\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\team\\3.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\team\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\team\\4.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\team\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\wishlist-thumb\\1.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\wishlist-thumb\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\wishlist-thumb\\2.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\wishlist-thumb\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\wishlist-thumb\\3.jpg",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\wishlist-thumb\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\index-2.html",
+      "PackagePath": "staticwebassets\\eTemplate\\index-2.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\index-3.html",
+      "PackagePath": "staticwebassets\\eTemplate\\index-3.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\index-4.html",
+      "PackagePath": "staticwebassets\\eTemplate\\index-4.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\index.html",
+      "PackagePath": "staticwebassets\\eTemplate\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\ajax-mail.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\ajax-mail.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.barrating.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.barrating.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.meanmenu.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.meanmenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.mixitup.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\main.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\scrollUp.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\vendor\\modernizr-2.8.3.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\vendor\\popper.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\vendor\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\venobox.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\venobox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\eTemplate\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\login-register.html",
+      "PackagePath": "staticwebassets\\eTemplate\\login-register.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\product-details.html",
+      "PackagePath": "staticwebassets\\eTemplate\\product-details.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-3-column.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-3-column.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-4-column.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-4-column.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-left-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-left-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-list-left-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-list-left-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-list-right-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-list-right-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-list.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-list.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shop-right-sidebar.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shop-right-sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\shopping-cart.html",
+      "PackagePath": "staticwebassets\\eTemplate\\shopping-cart.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-affiliate.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-affiliate.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-carousel.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-carousel.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-gallery-left.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-gallery-left.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-gallery-right.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-gallery-right.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-group.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-group.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-normal.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-normal.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-sale.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-sale.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-tab-style-left.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-tab-style-left.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-tab-style-right.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-tab-style-right.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product-tab-style-top.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product-tab-style-top.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\single-product.html",
+      "PackagePath": "staticwebassets\\eTemplate\\single-product.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\style.css",
+      "PackagePath": "staticwebassets\\eTemplate\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\theia-sticky-sidebar",
+      "PackagePath": "staticwebassets\\eTemplate"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\wishlist.html",
+      "PackagePath": "staticwebassets\\eTemplate\\wishlist.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AmazonShopping.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AmazonShopping.WebUI.props",
+      "PackagePath": "build\\AmazonShopping.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AmazonShopping.WebUI.props",
+      "PackagePath": "buildMultiTargeting\\AmazonShopping.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AmazonShopping.WebUI.props",
+      "PackagePath": "buildTransitive\\AmazonShopping.WebUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
