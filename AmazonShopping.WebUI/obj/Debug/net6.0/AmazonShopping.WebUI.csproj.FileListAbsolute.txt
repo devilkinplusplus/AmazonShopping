@@ -285,3 +285,6 @@ C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\Autofac.dll
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,4 +1,8 @@
-﻿<div class="main-page signup-page">
+﻿@{
+    Layout = "_AuthLayout";
+}
+@model RegisterDTO
+<div class="main-page signup-page">
     <h2 class="title1">SignUp Here</h2>
     <div class="sign-up-row widget-shadow">
         <h5>Personal Information :</h5>
@@ -22,8 +26,10 @@
    
             <div class="clearfix"> </div>
             <div class="sub_home">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Register">
                 <div class="clearfix"> </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger">
+                </div>
             </div>
             <div class="registration">
                 Already Registered.

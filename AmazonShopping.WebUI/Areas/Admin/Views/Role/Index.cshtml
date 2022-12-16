@@ -1,0 +1,45 @@
+﻿@model IEnumerable<IdentityRole>
+@{
+    int counter = 1;
+}
+<div class="main-page">
+    <div class="tables">
+        <h2 class="title1">Tables</h2>
+        <div class="table-responsive bs-example widget-shadow">
+            <h4>Role List:</h4>
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Role</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@counter</th>
+                            <td>@item.Name</td>
+                            <td>
+                                <a href="/admin/role/edit/@item.Id"
+                                   class="btn btn-warning btn-sm">Edit</a>
+                            </td>
+                            <td>
+                                <a href="/admin/role/delete/@item.Id"
+                                   onclick="return confirm('Are you sure?')"
+                                   class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                        counter++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <div class="mt-2">
+            <a href="/admin/role/create" class="btn btn-success">New Role</a>
+        </div>
+    </div>
+</div>

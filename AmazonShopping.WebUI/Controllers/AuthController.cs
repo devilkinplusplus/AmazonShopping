@@ -1,6 +1,9 @@
-﻿using AmazonShopping.Core.Entity.Concrete;
+﻿using AmazonShopping.Business.Validators;
+using AmazonShopping.Core.Entity.Concrete;
 using AmazonShopping.Entities.DTOs;
 using AutoMapper;
+using FluentValidation.AspNetCore;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,18 +32,31 @@ namespace AmazonShopping.WebUI.Controllers
             var user = await userManager.FindByEmailAsync(model.Email);
             if (user != null)
                 return View();
-
             var mapper = _mapper.Map<User>(model);
             mapper.Firstname = model.Firstname;
             mapper.Lastname = model.Lastname;
             mapper.Email = model.Email;
             mapper.UserName = model.Email;
 
-            var result = await userManager.CreateAsync(mapper, model.Password);
+            UserValidator validationRules = new UserValidator();
+            ValidationResult validations = validationRules.Validate(mapper);
 
-            if (result.Succeeded)
+            if (validations.IsValid)
             {
-                return RedirectToAction(nameof(Login));
+                var result = await userManager.CreateAsync(mapper, model.Password);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction(nameof(Login));
+                }
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
+            }
+
+            foreach (var item in validations.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
 
             return View(model);
@@ -57,6 +73,7 @@ namespace AmazonShopping.WebUI.Controllers
             var user = await userManager.FindByEmailAsync(model.Email);
             if (user == null)
                 return View();
+
 
             var result = await signInManager.PasswordSignInAsync(user, model.Password, true, true);
 

@@ -15,9 +15,6 @@ builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterMod
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//builder.Services.AddDefaultIdentity<User>().AddRoles<IdentityRole>().
-//    AddEntityFrameworkStores<AppDbContext>();
-
 
 builder.Services.AddIdentity<User,IdentityRole>(opt =>
 {
@@ -25,6 +22,7 @@ builder.Services.AddIdentity<User,IdentityRole>(opt =>
     opt.Password.RequireUppercase = false;
     opt.Password.RequireLowercase = false;
     opt.Password.RequireDigit = false;
+    opt.Password.RequiredLength = 6;
 }).
     AddEntityFrameworkStores<AppDbContext>();
 
