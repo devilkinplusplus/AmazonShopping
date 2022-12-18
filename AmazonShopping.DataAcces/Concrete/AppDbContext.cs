@@ -15,10 +15,11 @@ namespace AmazonShopping.DataAcces.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=WIN-0AVBIPRU9F2;Database=AmazonShoppingDB;Integrated Security = True");
+            optionsBuilder.UseSqlServer("Server=WIN-0AVBIPRU9F2;Database=AmazonShopping;Integrated Security = True");
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

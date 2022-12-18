@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmazonShopping.DataAcces.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221215154526_nameLastNameInUserTable")]
-    partial class nameLastNameInUserTable
+    [Migration("20221218105317_addingProductEntityV3")]
+    partial class addingProductEntityV3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -117,7 +117,7 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("AmazonShopping.Entities.Concrete.CategorySub", b =>
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -131,36 +131,21 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("SubCategoryId")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("SubCategoryId");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("CategorySubs");
-                });
-
-            modelBuilder.Entity("AmazonShopping.Entities.Concrete.SubCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SubCategories");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -296,23 +281,23 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AmazonShopping.Entities.Concrete.CategorySub", b =>
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Product", b =>
                 {
                     b.HasOne("AmazonShopping.Entities.Concrete.Category", "Category")
-                        .WithMany()
+                        .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AmazonShopping.Entities.Concrete.SubCategory", "SubCategory")
+                    b.HasOne("AmazonShopping.Core.Entity.Concrete.User", "User")
                         .WithMany()
-                        .HasForeignKey("SubCategoryId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Category");
 
-                    b.Navigation("SubCategory");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -364,6 +349,11 @@ namespace AmazonShopping.DataAcces.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

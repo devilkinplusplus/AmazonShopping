@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AmazonShopping.WebUI.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class RoleController : Controller
     {

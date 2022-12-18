@@ -14,11 +14,13 @@ namespace AmazonShopping.WebUI.Controllers
         private readonly IMapper _mapper;
         private readonly UserManager<User> userManager;
         private readonly SignInManager<User> signInManager;
-        public AuthController(IMapper mapper, SignInManager<User> signInManager, UserManager<User> userManager)
+        private readonly RoleManager<IdentityRole> roleManager;
+        public AuthController(IMapper mapper, SignInManager<User> signInManager, UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
         {
             _mapper = mapper;
             this.signInManager = signInManager;
             this.userManager = userManager;
+            this.roleManager = roleManager;
         }
 
         public IActionResult Register()
@@ -46,6 +48,7 @@ namespace AmazonShopping.WebUI.Controllers
                 var result = await userManager.CreateAsync(mapper, model.Password);
                 if (result.Succeeded)
                 {
+                    await userManager.AddToRoleAsync(mapper, "User");
                     return RedirectToAction(nameof(Login));
                 }
                 foreach (var item in result.Errors)
@@ -79,6 +82,10 @@ namespace AmazonShopping.WebUI.Controllers
 
             if (result.Succeeded)
             {
+                if (await userManager.IsInRoleAsync(user, "User"))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
                 return RedirectToAction("Index", "Admin", new { area = "Admin" });
             }
 
