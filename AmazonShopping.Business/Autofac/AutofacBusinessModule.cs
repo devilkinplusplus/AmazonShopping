@@ -18,11 +18,6 @@ namespace AmazonShopping.Business.Autofac
             builder.RegisterType<CategoryDal>().As<ICategoryDal>();
             builder.RegisterType<CategoryManager>().As<ICategoryService>();
 
-            builder.RegisterType<SubCategoryDal>().As<ISubCategoryDal>();
-            builder.RegisterType<SubCategoryManager>().As<ISubCategoryService>();
-
-            builder.RegisterType<CategorySubDal>().As<ICategorySubDal>();
-            builder.RegisterType<CategorySubManager>().As<ICategorySubService>();
         }
     }
 }
