@@ -11,6 +11,7 @@ namespace AmazonShopping.Business.Constants
         public static string CannotBeNull = "Cannot be null!";
         public static string OutOfRange = "Value is out of range!";
         public static string InvalidMail = "Email is invalid!";
-
+        public static string SuccessMessage = "Success!";
+        public static string ErrorMessage = "Error Occures!";
     }
 }

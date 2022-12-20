@@ -17,7 +17,8 @@ namespace AmazonShopping.Business.Autofac
         {
             builder.RegisterType<CategoryDal>().As<ICategoryDal>();
             builder.RegisterType<CategoryManager>().As<ICategoryService>();
-
+            builder.RegisterType<ProductDal>().As<IProductDal>();
+            builder.RegisterType<ProductManager>().As<IProductService>();
         }
     }
 }
