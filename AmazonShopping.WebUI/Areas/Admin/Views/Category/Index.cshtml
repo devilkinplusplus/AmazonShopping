@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Category>
+
+<div class="main-page">
+    <div class="tables">
+        <h2 class="title1">Tables</h2>
+        <div class="table-responsive bs-example widget-shadow">
+            <h4>Category List:</h4>
+            @if (Model.Count() != 0)
+            {
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>
+                                    <a href="/admin/category/edit/@item.Id"
+                                       class="btn btn-warning btn-sm">Edit</a>
+                                </td>
+                                <td>
+                                    <a href="/admin/category/delete/@item.Id"
+                                       onclick="return confirm('Are you sure?')"
+                                       class="btn btn-danger btn-sm">Delete</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="container">
+                    <h2 class="lead">No item found !</h2>
+                </div>
+            }
+        </div>
+        <br />
+        <div class="mt-2">
+            <a href="/admin/category/create" class="btn btn-success">New Category</a>
+        </div>
+    </div>
+</div>
