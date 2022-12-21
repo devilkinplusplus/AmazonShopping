@@ -17,5 +17,7 @@ namespace AmazonShopping.Business.Abstract
         void CreateProduct(CreateProductDTO product,string userId);
         void EditProduct(EditProductDTO product,string userId);
         void DeleteProduct(Product product);
+        IEnumerable<Product> NewProducts();
+        IEnumerable<Product> TrendingProducts();
     }
 }

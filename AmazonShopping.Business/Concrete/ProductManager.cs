@@ -133,5 +133,29 @@ namespace AmazonShopping.Business.Concrete
                 throw new Exception(ex.Message);
             }
         }
+
+        public IEnumerable<Product> NewProducts()
+        {
+            try
+            {
+                return _productDal.NewProducts();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public IEnumerable<Product> TrendingProducts()
+        {
+            try
+            {
+                return _productDal.TrendingProducts();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
