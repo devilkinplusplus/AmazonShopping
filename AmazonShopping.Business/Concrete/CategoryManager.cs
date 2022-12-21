@@ -61,7 +61,7 @@ namespace AmazonShopping.Business.Concrete
 
         public IEnumerable<Category> GetCategories()
         {
-            return _categoryDal.GetAll();
+            return _categoryDal.GetAll(x=>x.IsDeleted==false);
         }
 
         public Category GetCategoryById(int id)

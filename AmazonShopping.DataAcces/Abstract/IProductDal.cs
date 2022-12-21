@@ -13,5 +13,7 @@ namespace AmazonShopping.DataAcces.Abstract
     {
         IEnumerable<Product> GetAllProducts(Expression<Func<Product, bool>>? filter=null);
         Product GetProduct(Expression<Func<Product, bool>>? filter);
+        IEnumerable<Product> NewProducts();
+        IEnumerable<Product> TrendingProducts();
     }
 }
