@@ -35,6 +35,7 @@ namespace AmazonShopping.Business.Concrete
             try
             {
                 var mapper = _mapper.Map<Product>(product);
+                mapper.Title = product.title;
                 mapper.Name = product.name;
                 mapper.UserId = userId;
                 mapper.CategoryId = product.categoryId;
@@ -72,6 +73,7 @@ namespace AmazonShopping.Business.Concrete
             {
                 var data = _productDal.Get(x => x.Id == product.id);
                 var mapper = _mapper.Map<Product>(product);
+                data.Title = product.title;
                 data.UserId = userId;
                 data.Name = product.name;
                 data.CategoryId = product.categoryId;
