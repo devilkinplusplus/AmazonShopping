@@ -11,6 +11,7 @@ namespace AmazonShopping.Entities.Concrete
     public class Product:IEntity
     {
         public int Id { get; set; }
+        public string Title { get; set; }
         public string Name { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }
@@ -18,5 +19,6 @@ namespace AmazonShopping.Entities.Concrete
         public Category Category { get; set; }
         public bool IsDeleted { get; set; }
         public int Hit { get; set; }
+        public virtual ICollection<Favourit> Favourits { get; set; }
     }
 }

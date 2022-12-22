@@ -19,6 +19,7 @@ namespace AmazonShopping.Business.AutoMapper
             CreateMap<LoginDTO, User>().ReverseMap();
             CreateMap<CreateProductDTO, Product>().ReverseMap();
             CreateMap<EditProductDTO, Product>().ReverseMap();
+            CreateMap<AddToFavourits,Favourit>().ReverseMap();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿<!Doctype html>
+﻿@inject AppDbContext context
+<!Doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -41,6 +42,10 @@
     <link rel="stylesheet" href="~/eTemplate/css/responsive.css">
     <!-- Modernizr js -->
     <script src="~/eTemplate/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <!-- Begin Body Wrapper -->
@@ -72,8 +77,14 @@
                                 <ul class="hm-menu">
                                     <!-- Begin Header Middle Wishlist Area -->
                                     <li class="hm-wishlist">
-                                        <a href="wishlist.html">
-                                            <span class="cart-item-count wishlist-item-count">0</span>
+                                        <a href="/cart/index">
+                                            @{
+                                                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                                                var count = context.Favourit.
+                                                Where(x=>x.UserId==userId && x.IsDeleted==false).Count();
+                                            }
+                                            <span class="cart-item-count wishlist-item-count">@count</span>
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </li>
@@ -126,7 +137,6 @@
             <!-- Mobile Menu Area End Here -->
         </header>
         <!-- Header Area End Here -->
-
         @RenderBody()
 
         <!-- Begin Footer Area -->
