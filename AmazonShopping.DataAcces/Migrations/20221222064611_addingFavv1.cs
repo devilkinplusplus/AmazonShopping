@@ -45,7 +45,7 @@ namespace AmazonShopping.DataAcces.Migrations
                 column: "ProductId",
                 principalTable: "Products",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Favourits_Users_UserId",
@@ -53,7 +53,7 @@ namespace AmazonShopping.DataAcces.Migrations
                 column: "UserId",
                 principalTable: "Users",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -95,7 +95,7 @@ namespace AmazonShopping.DataAcces.Migrations
                 column: "ProductId",
                 principalTable: "Products",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Favourit_Users_UserId",
@@ -103,7 +103,7 @@ namespace AmazonShopping.DataAcces.Migrations
                 column: "UserId",
                 principalTable: "Users",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
         }
     }
 }
