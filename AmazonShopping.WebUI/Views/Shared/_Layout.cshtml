@@ -82,7 +82,8 @@
                                                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
                                                 var count = context.Favourit.
-                                                Where(x=>x.UserId==userId && x.IsDeleted==false).Count();
+                                                Where(x => x.UserId == userId && x.IsDeleted == false).
+                                                Count();
                                             }
                                             <span class="cart-item-count wishlist-item-count">@count</span>
                                             <i class="fa fa-heart-o"></i>
@@ -114,8 +115,31 @@
                                             <a href="index.html">Categories</a>
                                             @await Component.InvokeAsync("CategoriesInLayout")
                                         </li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                        <li>
+                                            @{
+                                                var username = User.FindFirstValue(ClaimTypes.Name);
+                                                if (User.Identity.IsAuthenticated)
+                                                {
+                                                    <a href="#">
+                                                        @username
+                                                    </a>
+                                                    <ul class="hb-dropdown">
+                                                        <li><a href="/auth/logout">Logout</a></li>
+                                                    </ul>
+                                                }
+                                                else
+                                                {
+                                                    <a href="#">Login</a>
+                                                    <ul class="hb-dropdown">
+                                                        <li><a href="/auth/login">Login</a></li>
+                                                        <li><a href="/auth/register">Register</a></li>
+                                                    </ul>
+                                                }
+                                            }
+                                            
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

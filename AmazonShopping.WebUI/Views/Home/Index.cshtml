@@ -150,11 +150,13 @@
                 type: "POST",
                 data: dataObject,
                 success: function (res) {
-                    Swal.fire(
-                        'Added to Favourits!',
-                        '',
-                        'success'
-                    )
+                    if (res != null) {
+                        Swal.fire(
+                            'Added to Favourits!',
+                            '',
+                            'success'
+                        )
+                    }
                 }
             }).done(function (res) {
                 console.log(res)

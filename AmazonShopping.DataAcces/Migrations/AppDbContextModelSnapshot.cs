@@ -115,6 +115,36 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Favourit", b =>
                 {
                     b.Property<int>("Id")
@@ -142,7 +172,7 @@ namespace AmazonShopping.DataAcces.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Favourits");
+                    b.ToTable("Favourit");
                 });
 
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Product", b =>

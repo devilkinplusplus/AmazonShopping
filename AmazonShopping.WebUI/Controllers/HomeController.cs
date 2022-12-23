@@ -26,7 +26,7 @@ namespace AmazonShopping.WebUI.Controllers
             HomeVM home = new()
             {
                 NewProducts = newProducts,
-                TrendingProducts= trendingProducts
+                TrendingProducts = trendingProducts
             };
             return View(home);
         }
@@ -35,8 +35,12 @@ namespace AmazonShopping.WebUI.Controllers
         public JsonResult AddToFavourits(AddToFavourits favourit)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var result = _favouritService.Add(favourit,userId);
-            return Json(result);
+            var result = _favouritService.Add(favourit, userId);
+            if (result.Success)
+            {
+                return Json(result);
+            }
+            return Json(null);
         }
 
 
