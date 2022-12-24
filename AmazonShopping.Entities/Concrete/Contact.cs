@@ -16,5 +16,6 @@ namespace AmazonShopping.Entities.Concrete
         public string Message { get; set; }
         public DateTime Date { get; set; }
         public bool IsDeleted { get; set; }
+        public ICollection<Reply> Replies { get; set; }
     }
 }

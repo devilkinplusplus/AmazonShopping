@@ -238,6 +238,40 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Reply", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ContactId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContactId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Replies");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -417,6 +451,25 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Reply", b =>
+                {
+                    b.HasOne("AmazonShopping.Entities.Concrete.Contact", "Contact")
+                        .WithMany("Replies")
+                        .HasForeignKey("ContactId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AmazonShopping.Core.Entity.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contact");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -476,6 +529,11 @@ namespace AmazonShopping.DataAcces.Migrations
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Contact", b =>
+                {
+                    b.Navigation("Replies");
                 });
 
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Product", b =>

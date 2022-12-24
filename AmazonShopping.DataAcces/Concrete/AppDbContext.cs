@@ -23,6 +23,7 @@ namespace AmazonShopping.DataAcces.Concrete
         public DbSet<Favourit> Favourit { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Catalog> Catalogs { get; set; }
+        public DbSet<Reply> Replies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

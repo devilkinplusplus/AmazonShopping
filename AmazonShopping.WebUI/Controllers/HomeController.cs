@@ -28,7 +28,9 @@ namespace AmazonShopping.WebUI.Controllers
                 NewProducts = newProducts.Data,
                 TrendingProducts = trendingProducts.Data
             };
-            return View(home);
+            if(newProducts.Success && trendingProducts.Success)
+                return View(home);
+            return View();
         }
 
         [HttpPost]

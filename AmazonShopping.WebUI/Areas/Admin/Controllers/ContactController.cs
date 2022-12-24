@@ -18,7 +18,9 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Index()
         {
             var values = _contactService.GetFeedbacks();
-            return View(values);
+            if(values.Success)
+                return View(values);
+            return View();
         }
     }
 }
