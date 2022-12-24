@@ -17,7 +17,9 @@ namespace AmazonShopping.WebUI.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var values = _favouritService.GetFavouritList(userId);
-            return View(values);
+            if(values.Success)
+                return View(values);
+            return View();
         }
 
         [HttpPost]

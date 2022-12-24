@@ -5,9 +5,30 @@
     <div class="folder widget-shadow">
         <ul>
             <li class="head"><i class="fa fa-folder" aria-hidden="true"></i>Folders</li>
-            <li><a href="inbox.html"><i class="fa fa-inbox"></i>Inbox <span>52</span></a></li>
-            <li><a href="#"><i class="fa fa fa-envelope-o"></i>Sent </a></li>
-            <li><a href="#"><i class="fa fa-trash-o"></i>Trash</a></li>
+            <li>
+                <a href="inbox.html">
+                    <i class="fa fa-inbox"></i>Inbox
+                    <span>
+                        @(Model == null ? 0 : Model.Data.Count())
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa fa-envelope-o"></i>Sent
+                    <span>
+                        @(Model == null ? 0 : Model.Data.Count())
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-trash-o"></i>Trash
+                    <span>
+                        @(Model == null ? 0 : Model.Data.Count())
+                    </span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
@@ -18,55 +39,82 @@
         </div>
         <div class="inbox-page">
             <h4>Feedbacks</h4>
-            <div class="inbox-row widget-shadow">
-                <div class="mail mail-name"><h6>Charley</h6></div>
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                    <div class="mail">
-                        <p>Vely Ornare  leo nullam quis risus mollis lorem ipsum</p>
-                    </div>
-                </a>
-                <div class="mail-right dots_drop">
-                    <div class="dropdown">
-                        <a href="#" data-toggle="dropdown" aria-expanded="false">
-                            <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+            @if (Model != null)
+            {
+                @foreach (var item in Model.Data)
+                {
+                    <div class="inbox-row widget-shadow">
+                        <div class="mail mail-name">
+                            <h6>
+                                @(item.Subject != null ? item.Subject : "None")
+                            </h6>
+                        </div>
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <div class="mail">
+                                <p>
+                                    @(item.Message.Length > 50 ? item.Message.Substring(0, item.Message.Substring(0, 50).LastIndexOf(" ")) + "..." : item.Message + "...")
+                                </p>
+                            </div>
                         </a>
-                        <ul class="dropdown-menu float-right">
-                            <li>
-                                <a role="button" data-toggle="collapse" data-parent="#accordion"    
-                            href="#collapseFour" aria-expanded="true" aria-controls="collapsefour">
-                                    <i class="fa fa-reply mail-icon"></i>
-                                    Reply
+                        <div class="mail-right dots_drop">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#" title="">
-                                    <i class="fa fa-download mail-icon"></i>
-                                    Archive
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="font-red" title="">
-                                    <i class="fa fa-trash-o mail-icon"></i>
-                                    Delete
-                                </a>
-                            </li>
-                        </ul>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                           href="#@item.Id" aria-expanded="true"
+                                           aria-controls="@item.Id">
+                                            <i class="fa fa-reply mail-icon"></i>
+                                            Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i>
+                                            Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i>
+                                            Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mail-right">
+                            <p>
+                                @item.Date.ToString("dd MMMM")
+                            </p>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <div id="@item.Id" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFour">
+                            <div class="mail-body">
+                                <p>
+                                    @item.Message
+                                </p>
+                                <form method="post">
+                                    <input type="text" placeholder="Reply to sender" required="">
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
+                }
+            }
+            else
+            {
+                <div class="mail">
+                    <h1 class="lead">
+                        No Feedbacks Yet !
+                    </h1>
                 </div>
-                <div class="mail-right"><p>30th Nov</p></div>
-                <div class="clearfix"> </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                    <div class="mail-body">
-                        <p> 
-                            User FeedBacks
-                        </p>
-                        <form>
-                            <input type="text" placeholder="Reply to sender" required="">
-                            <input type="submit" value="Send">
-                        </form>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>

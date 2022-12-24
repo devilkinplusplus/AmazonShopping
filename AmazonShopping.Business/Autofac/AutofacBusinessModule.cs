@@ -25,6 +25,8 @@ namespace AmazonShopping.Business.Autofac
             builder.RegisterType<ContactManager>().As<IContactService>();
             builder.RegisterType<CatalogDal>().As<ICatalogDal>();
             builder.RegisterType<CatalogManager>().As<ICatalogService>();
+            builder.RegisterType<ReplyDal>().As<IReplyDal>();
+            builder.RegisterType<ReplyManager>().As<IReplyService>();
         }
     }
 }

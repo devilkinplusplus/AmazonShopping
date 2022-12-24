@@ -20,7 +20,9 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Index()
         {
             var values = _categoryService.GetCategories();
-            return View(values);
+            if(values.Success)
+                return View(values);
+            return View();
         }
 
         public IActionResult Create()

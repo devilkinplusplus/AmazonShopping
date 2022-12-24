@@ -105,18 +105,18 @@
                         <div class="col-lg-12">
                             <!-- Begin Header Bottom Menu Area -->
                             <div class="hb-menu">
-                                <nav>
-                                    <ul>
-                                        <li>
+                                <nav >
+                                    <ul class="row justify-content-start">
+                                        <li class="col-1">
                                             <a href="/home/index">Home</a>
                                         </li>
-                                        <li class="dropdown-holder">
+                                        <li class="dropdown-holder col-2">
                                             <a href="index.html">Categories</a>
                                             @await Component.InvokeAsync("CategoriesInLayout")
                                         </li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="/contact/">Contact</a></li>
-                                        <li class="text-right">
+                                        <li class="col-1"><a href="#">About</a></li>
+                                        <li class="col-2"><a href="/contact/">Contact</a></li>
+                                        <li class="col-4">
                                             @{
                                                 var username = User.FindFirstValue(ClaimTypes.Name);
                                                 if (User.Identity.IsAuthenticated)
@@ -137,7 +137,6 @@
                                                     </ul>
                                                 }
                                             }
-                                            
                                         </li>
                                     </ul>
                                 </nav>

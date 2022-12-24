@@ -26,7 +26,9 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Index()
         {
             var result = _productService.GetAllActiveProducts();
-            return View(result);
+            if(result.Success)
+                return View(result);
+            return View();
         }
 
         public IActionResult Create()
