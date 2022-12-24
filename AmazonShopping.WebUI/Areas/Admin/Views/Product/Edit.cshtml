@@ -1,4 +1,4 @@
-﻿@model Product
+﻿@model IDataResult<Product>
 <div class="forms">
     <h2 class="title1">Product Edit</h2>
     <div class=" form-grids row form-grids-right">
@@ -12,23 +12,33 @@
                         <label for="role" class="col-sm-2 control-label">Title</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" name="Title" required
-                                   id="role" placeholder="Product Title" value="@Model.Title">
+                                   id="role" placeholder="Product Title" value="@Model.Data.Title">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="role" class="col-sm-2 control-label">Link</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" name="Name" required
-                                   id="role" placeholder="Product Link" value="@Model.Name">
+                                   id="role" placeholder="Product Link" value="@Model.Data.Name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="role" class="col-sm-2 control-label">Category</label>
                         <div class="col-sm-9">
-                            <select asp-items="@ViewBag.categoryValues" asp-for="@Model.Category.Id"
+                            <select asp-items="@ViewBag.categoryValues" asp-for="@Model.Data.Category.Id"
                                     name="CategoryId"
                                     class="form-control" required>
-                                <option selected>@Model.Category.Name</option>
+                                <option selected>@Model.Data.Category.Name</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="role" class="col-sm-2 control-label">Category</label>
+                        <div class="col-sm-9">
+                            <select asp-items="@ViewBag.catalogValues" asp-for="@Model.Data.Catalog.Id"
+                                    name="CatalogId"
+                                    class="form-control" required>
+                                <option selected>@Model.Data.Catalog.Name</option>
                             </select>
                         </div>
                     </div>

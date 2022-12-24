@@ -1,4 +1,5 @@
 ﻿using AmazonShopping.Business.Abstract;
+using AmazonShopping.Business.Constants;
 using AmazonShopping.Core.Helpers.Result.Abstract;
 using AmazonShopping.Core.Helpers.Result.Concrete.ErrorResult;
 using AmazonShopping.Core.Helpers.Result.Concrete.SuccessResults;
@@ -66,16 +67,18 @@ namespace AmazonShopping.Business.Concrete
             }
         }
 
-        public IEnumerable<Favourit> GetFavouritList(string userId)
+        public IDataResult<IEnumerable<Favourit>> GetFavouritList(string userId)
         {
             try
             {
                 var values = _favouritDal.GetAll(userId);
-                return values;
+                if(values.Count()!=0)
+                    return new SuccessDataResult<IEnumerable<Favourit>>(values);
+                return new ErrorDataResult<IEnumerable<Favourit>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Favourit>>(ex.Message);
             }
 
         }

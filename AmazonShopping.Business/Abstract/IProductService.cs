@@ -11,13 +11,13 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface IProductService
     {
-        Product GetProduct(int id);
-        IEnumerable<Product> GetAllProducts();
-        IEnumerable<Product> GetAllActiveProducts();
-        void CreateProduct(CreateProductDTO product,string userId);
-        void EditProduct(EditProductDTO product,string userId);
-        void DeleteProduct(Product product);
-        IEnumerable<Product> NewProducts();
-        IEnumerable<Product> TrendingProducts();
+        IDataResult<Product> GetProduct(int id);
+        IDataResult<IEnumerable<Product>> GetAllProducts();
+        IDataResult<IEnumerable<Product>> GetAllActiveProducts();
+        IResult CreateProduct(CreateProductDTO product,string userId);
+        IResult EditProduct(EditProductDTO product,string userId);
+        IResult DeleteProduct(Product product);
+        IDataResult<IEnumerable<Product>> NewProducts();
+        IDataResult<IEnumerable<Product>> TrendingProducts();
     }
 }

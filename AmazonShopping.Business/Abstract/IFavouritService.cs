@@ -11,7 +11,7 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface IFavouritService
     {
-        IEnumerable<Favourit> GetFavouritList(string userId);
+        IDataResult<IEnumerable<Favourit>> GetFavouritList(string userId);
         IDataResult<Favourit> Add(AddToFavourits favourit,string userId);
         IDataResult<Favourit> Edit(int id);
     }

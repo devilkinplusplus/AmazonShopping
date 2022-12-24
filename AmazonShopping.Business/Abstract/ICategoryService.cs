@@ -1,4 +1,5 @@
-﻿using AmazonShopping.Entities.Concrete;
+﻿using AmazonShopping.Core.Helpers.Result.Abstract;
+using AmazonShopping.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface ICategoryService
     {
-        IEnumerable<Category> GetCategories();
-        Category GetCategoryById(int id);
-        void CreateCategory(Category category);
-        void EditCategory(Category category);
-        void DeleteCategory(Category category);
+        IDataResult<IEnumerable<Category>> GetCategories();
+        IDataResult<Category> GetCategoryById(int id);
+        IResult CreateCategory(Category category);
+        IResult EditCategory(Category category);
+        IResult DeleteCategory(Category category);
 
     }
 }

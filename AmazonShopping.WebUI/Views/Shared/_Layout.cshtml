@@ -80,7 +80,6 @@
                                         <a href="/cart/index">
                                             @{
                                                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
                                                 var count = context.Favourit.
                                                 Where(x => x.UserId == userId && x.IsDeleted == false).
                                                 Count();
@@ -117,7 +116,7 @@
                                         </li>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="/contact/">Contact</a></li>
-                                        <li>
+                                        <li class="text-right">
                                             @{
                                                 var username = User.FindFirstValue(ClaimTypes.Name);
                                                 if (User.Identity.IsAuthenticated)

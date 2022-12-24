@@ -95,6 +95,26 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Catalog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Catalogs");
+                });
+
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -183,6 +203,9 @@ namespace AmazonShopping.DataAcces.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("CatalogId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -205,6 +228,8 @@ namespace AmazonShopping.DataAcces.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CatalogId");
 
                     b.HasIndex("CategoryId");
 
@@ -367,6 +392,12 @@ namespace AmazonShopping.DataAcces.Migrations
 
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Product", b =>
                 {
+                    b.HasOne("AmazonShopping.Entities.Concrete.Catalog", "Catalog")
+                        .WithMany("Products")
+                        .HasForeignKey("CatalogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("AmazonShopping.Entities.Concrete.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
@@ -378,6 +409,8 @@ namespace AmazonShopping.DataAcces.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Catalog");
 
                     b.Navigation("Category");
 
@@ -433,6 +466,11 @@ namespace AmazonShopping.DataAcces.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AmazonShopping.Entities.Concrete.Catalog", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("AmazonShopping.Entities.Concrete.Category", b =>

@@ -25,16 +25,18 @@ namespace AmazonShopping.Business.Concrete
             _contactDal = contactDal;
         }
 
-        public IEnumerable<Contact> GetFeedbacks()
+        public IDataResult<IEnumerable<Contact>> GetFeedbacks()
         {
             try
             {
                 var values = _contactDal.GetAll(x => x.IsDeleted == false);
-                return values;
+                if (values.Count() != 0)
+                    return new SuccessDataResult<IEnumerable<Contact>>(values);
+                return new ErrorDataResult<IEnumerable<Contact>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Contact>>(ex.Message);
             }
         }
 

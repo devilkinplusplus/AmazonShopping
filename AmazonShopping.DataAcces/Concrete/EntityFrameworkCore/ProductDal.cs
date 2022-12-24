@@ -18,26 +18,29 @@ namespace AmazonShopping.DataAcces.Concrete.EntityFrameworkCore
         public IEnumerable<Product> GetAllProducts(Expression<Func<Product, bool>>? filter)
         {
             using var context = new AppDbContext();
-            return context.Products.Include(x => x.Category).Where(filter).ToList();
+            return context.Products.Include(x => x.Category).Include(x => x.Catalog).Where(filter)
+                .ToList();
         }
 
         public Product GetProduct(Expression<Func<Product, bool>>? filter)
         {
             using var context = new AppDbContext();
-            return context.Products.Include(x => x.Category).Where(filter).FirstOrDefault();
+            return context.Products.Include(x => x.Category).Include(x => x.Catalog)
+                .Where(filter).FirstOrDefault();
         }
 
         public IEnumerable<Product> NewProducts()
         {
             using var context = new AppDbContext();
-            var values = context.Products.OrderByDescending(x => x.Id).ToList();
+            var values = context.Products.OrderByDescending(x => x.Id).
+                Where(x => x.IsDeleted == false).ToList();
             return values;
         }
 
         public IEnumerable<Product> TrendingProducts()
         {
             using var context = new AppDbContext();
-            var values = context.Products.OrderByDescending(x => x.Hit).ToList();
+            var values = context.Products.OrderByDescending(x => x.Hit).Where(x => x.IsDeleted == false).ToList();
             return values;
         }
     }

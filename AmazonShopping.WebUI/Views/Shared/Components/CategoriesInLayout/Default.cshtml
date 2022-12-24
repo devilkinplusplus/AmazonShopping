@@ -1,6 +1,6 @@
-﻿@model IEnumerable<Category>
+﻿@model IDataResult<IEnumerable<Category>>
 <ul class="hb-dropdown">
-    @foreach (var item in Model)
+    @foreach (var item in Model.Data)
     {
         <li><a href="index-4.html">@item.Name</a></li>
     }

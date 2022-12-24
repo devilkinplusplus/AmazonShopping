@@ -23,6 +23,8 @@ namespace AmazonShopping.Business.Autofac
             builder.RegisterType<FavouritManager>().As<IFavouritService>();
             builder.RegisterType<ContactDal>().As<IContactDal>();
             builder.RegisterType<ContactManager>().As<IContactService>();
+            builder.RegisterType<CatalogDal>().As<ICatalogDal>();
+            builder.RegisterType<CatalogManager>().As<ICatalogService>();
         }
     }
 }
