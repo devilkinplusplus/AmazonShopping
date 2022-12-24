@@ -31,7 +31,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            CategoryValues();
+            CategoryAndCatalogValues();
             return View();
         }
 
@@ -46,7 +46,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Edit(int id)
         {
             var data = _productService.GetProduct(id);
-            CategoryValues();
+            CategoryAndCatalogValues();
             return View(data);
         }
 
@@ -62,8 +62,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Delete(int id)
         {
             var deletedData = _productService.GetProduct(id);
-            deletedData.IsDeleted = true;
-            _productService.DeleteProduct(deletedData);
+            _productService.DeleteProduct(deletedData.Data);
             return RedirectToAction(nameof(Index));
         }
 
@@ -71,7 +70,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
 
 
         [NonAction]
-        private void CategoryValues()
+        private void CategoryAndCatalogValues()
         {
             using var context = new AppDbContext();
             List<SelectListItem> categories =
@@ -81,7 +80,16 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
                      Value = y.Id.ToString(),
                      Text = y.Name
                  }).ToList();
+
+            List<SelectListItem> catalogs =
+            (from y in context.Catalogs.ToList().Where(x => x.IsDeleted == false)
+             select new SelectListItem
+             {
+                 Value = y.Id.ToString(),
+                 Text = y.Name
+             }).ToList();
             ViewBag.categoryValues = categories;
+            ViewBag.catalogValues = catalogs;
         }
 
     }

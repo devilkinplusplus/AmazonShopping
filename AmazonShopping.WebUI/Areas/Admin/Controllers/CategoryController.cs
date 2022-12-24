@@ -50,7 +50,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Delete(int id)
         {
             var data = _categoryService.GetCategoryById(id);
-            _categoryService.DeleteCategory(data);
+            _categoryService.DeleteCategory(data.Data);
             return RedirectToAction(nameof(Index));
         }
 

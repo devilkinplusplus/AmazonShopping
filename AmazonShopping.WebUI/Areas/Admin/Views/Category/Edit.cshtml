@@ -1,4 +1,4 @@
-﻿@model Category
+﻿@model IDataResult<Category>
 <div class="forms">
     <h2 class="title1">Category Edit</h2>
     <div class=" form-grids row form-grids-right">
@@ -12,7 +12,7 @@
                         <label for="role" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" name="Name" required
-                                   id="role" placeholder="Category" value="@Model.Name">
+                                   id="role" placeholder="Category" value="@Model.Data.Name">
                         </div>
                     </div>
                     <div class="col-sm-offset-2">

@@ -25,8 +25,8 @@ namespace AmazonShopping.WebUI.Controllers
             var trendingProducts = _productService.TrendingProducts();
             HomeVM home = new()
             {
-                NewProducts = newProducts,
-                TrendingProducts = trendingProducts
+                NewProducts = newProducts.Data,
+                TrendingProducts = trendingProducts.Data
             };
             return View(home);
         }

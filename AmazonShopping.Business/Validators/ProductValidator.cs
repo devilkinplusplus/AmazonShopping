@@ -14,6 +14,7 @@ namespace AmazonShopping.Business.Validators
         public ProductValidator()
         {
            RuleFor(x=>x.CategoryId).NotEmpty().NotNull().WithMessage(Messages.CannotBeNull);
+           RuleFor(x=>x.CatalogId).NotEmpty().NotNull().WithMessage(Messages.CannotBeNull);
            RuleFor(x=>x.Name).NotEmpty().NotNull().WithMessage(Messages.CannotBeNull);
         }
     }

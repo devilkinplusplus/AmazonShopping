@@ -16,7 +16,9 @@ namespace AmazonShopping.DataAcces.Concrete.EntityFrameworkCore
         public IEnumerable<Favourit> GetAll(string userId)
         {
             using var context = new AppDbContext();
-            return context.Favourit.Include(x => x.Product).Where(x=>x.UserId==userId && x.IsDeleted==false).ToList();
+            return context.Favourit.Include(x => x.Product).ThenInclude(x => x.Category)
+                .Include(x => x.Product.Catalog)
+                .Where(x => x.UserId == userId && x.IsDeleted == false).ToList();
         }
     }
 }

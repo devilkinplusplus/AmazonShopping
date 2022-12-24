@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using static AmazonShopping.Entities.DTOs.ProductDTO;
@@ -30,7 +31,7 @@ namespace AmazonShopping.Business.Concrete
             _mapper = mapper;
         }
 
-        public void CreateProduct(CreateProductDTO product, string userId)
+        public IResult CreateProduct(CreateProductDTO product, string userId)
         {
             try
             {
@@ -39,35 +40,39 @@ namespace AmazonShopping.Business.Concrete
                 mapper.Name = product.name;
                 mapper.UserId = userId;
                 mapper.CategoryId = product.categoryId;
+                mapper.CatalogId = product.catalogId;
                 mapper.Hit = product.hit;
                 ProductValidator validations = new ProductValidator();
                 ValidationResult result = validations.Validate(mapper);
                 if (result.IsValid)
                 {
                     _productDal.Add(mapper);
+                    return new SuccessResult(Messages.SuccessMessage);
                 }
+                return new ErrorResult(Messages.ErrorMessage);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorResult(ex.Message);
             }
         }
 
-        public void DeleteProduct(Product product)
+        public IResult DeleteProduct(Product product)
         {
             try
             {
                 var data = _productDal.Get(x => x.Id == product.Id);
                 data.IsDeleted = true;
                 _productDal.Update(data);
+                return new SuccessResult(Messages.SuccessMessage);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorResult(ex.Message);
             }
         }
 
-        public void EditProduct(EditProductDTO product, string userId)
+        public IResult EditProduct(EditProductDTO product, string userId)
         {
             try
             {
@@ -77,86 +82,97 @@ namespace AmazonShopping.Business.Concrete
                 data.UserId = userId;
                 data.Name = product.name;
                 data.CategoryId = product.categoryId;
+                data.CatalogId = product.catalogId;
 
                 ProductValidator validations = new ProductValidator();
                 ValidationResult result = validations.Validate(data);
                 if (result.IsValid)
                 {
                     _productDal.Update(data);
+                    return new SuccessResult(Messages.SuccessMessage);
                 }
+                return new ErrorResult(Messages.ErrorMessage);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorResult(ex.Message);
             }
         }
 
-        public IEnumerable<Product> GetAllActiveProducts()
+        public IDataResult<IEnumerable<Product>> GetAllActiveProducts()
         {
             try
             {
                 var data = _productDal.GetAllProducts(x => x.IsDeleted == false);
 
                 if (data.Count() != 0)
-                    return data;
-                return data;
+                    return new SuccessDataResult<IEnumerable<Product>>(data);
+                return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Product>>(ex.Message);
             }
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public IDataResult<IEnumerable<Product>> GetAllProducts()
         {
             try
             {
                 var data = _productDal.GetAllProducts();
                 if (data.Count() != 0)
-                    return data;
-                return data;
+                    return new SuccessDataResult<IEnumerable<Product>>(data);
+                return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Product>>(ex.Message);
             }
 
         }
 
-        public Product GetProduct(int id)
+        public IDataResult<Product> GetProduct(int id)
         {
             try
             {
                 var data = _productDal.GetProduct(x => x.Id == id);
-                return data;
+                if (data != null)
+                    return new SuccessDataResult<Product>(data);
+                return new ErrorDataResult<Product>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<Product>(ex.Message);
             }
         }
 
-        public IEnumerable<Product> NewProducts()
+        public IDataResult<IEnumerable<Product>> NewProducts()
         {
             try
             {
-                return _productDal.NewProducts();
+                var values = _productDal.NewProducts();
+                if (values.Count() != 0)
+                    return new SuccessDataResult<IEnumerable<Product>>(values);
+                return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Product>>(ex.Message);
             }
         }
 
-        public IEnumerable<Product> TrendingProducts()
+        public IDataResult<IEnumerable<Product>> TrendingProducts()
         {
             try
             {
-                return _productDal.TrendingProducts();
+                var values = _productDal.TrendingProducts();
+                if (values.Count() != 0)
+                    return new SuccessDataResult<IEnumerable<Product>>(values);
+                return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return new ErrorDataResult<IEnumerable<Product>>(ex.Message);
             }
         }
     }
