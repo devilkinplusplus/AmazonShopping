@@ -105,7 +105,7 @@
                         <div class="col-lg-12">
                             <!-- Begin Header Bottom Menu Area -->
                             <div class="hb-menu">
-                                <nav >
+                                <nav>
                                     <ul class="row justify-content-start">
                                         <li class="col-1">
                                             <a href="/home/index">Home</a>
@@ -119,13 +119,24 @@
                                         <li class="col-4">
                                             @{
                                                 var username = User.FindFirstValue(ClaimTypes.Name);
+                                                var isUserAdmin = User.IsInRole("Admin");
                                                 if (User.Identity.IsAuthenticated)
                                                 {
                                                     <a href="#">
                                                         @username
                                                     </a>
                                                     <ul class="hb-dropdown">
-                                                        <li><a href="/auth/logout">Logout</a></li>
+                                                        <form method="post" action="/auth/logout" id="submit">
+                                                        <li>
+                                                            <a href="#" onclick="SubmitFunction()">Logout</a>
+                                                        </li>
+                                                        </form>
+                                                        @if (isUserAdmin)
+                                                        {
+                                                            <li>
+                                                                <a href="/admin/admin">Admin Panel</a>
+                                                            </li>
+                                                        }
                                                     </ul>
                                                 }
                                                 else
@@ -429,6 +440,12 @@
     <script src="~/eTemplate/js/scrollUp.min.js"></script>
     <!-- Main/Activator js -->
     <script src="~/eTemplate/js/main.js"></script>
+    <!-- Submit logout form -->
+    <script>
+        function SubmitFunction() {
+            document.getElementById("submit").submit();
+        }
+    </script>
 </body>
 
 </html>

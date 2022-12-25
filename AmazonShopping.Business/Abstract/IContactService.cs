@@ -12,5 +12,6 @@ namespace AmazonShopping.Business.Abstract
     {
         IDataResult<IEnumerable<Contact>> GetFeedbacks();
         IDataResult<Contact> SendFeedback(Contact contact);
+        IDataResult<Contact> DeleteFeedback(int id);
     }
 }

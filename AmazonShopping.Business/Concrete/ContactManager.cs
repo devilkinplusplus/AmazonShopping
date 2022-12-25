@@ -25,6 +25,21 @@ namespace AmazonShopping.Business.Concrete
             _contactDal = contactDal;
         }
 
+        public IDataResult<Contact> DeleteFeedback(int id)
+        {
+            try
+            {
+                var currentData = _contactDal.Get(x => x.Id == id);
+                currentData.IsDeleted = true;
+                _contactDal.Update(currentData);
+                return new SuccessDataResult<Contact>(currentData);
+            }
+            catch (Exception ex)
+            {
+                return new ErrorDataResult<Contact>(ex.Message);
+            }
+        }
+
         public IDataResult<IEnumerable<Contact>> GetFeedbacks()
         {
             try
