@@ -1,12 +1,12 @@
 ﻿@model IDataResult<IEnumerable<Contact>>
-
+@inject AppDbContext context
 <h2 class="title1">Mail Page</h2>
 <div class="col-md-4 compose-left">
     <div class="folder widget-shadow">
         <ul>
             <li class="head"><i class="fa fa-folder" aria-hidden="true"></i>Folders</li>
             <li>
-                <a href="inbox.html">
+                <a href="#">
                     <i class="fa fa-inbox"></i>Inbox
                     <span>
                         @(Model == null ? 0 : Model.Data.Count())
@@ -14,10 +14,16 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/admin/contact/sent">
                     <i class="fa fa fa-envelope-o"></i>Sent
                     <span>
-                        @(Model == null ? 0 : Model.Data.Count())
+                        @{
+                            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                            var count = context.Replies.
+                            Where(x => x.IsDeleted == false && x.UserId == userId).Count();
+                        }
+                        @count
                     </span>
                 </a>
             </li>
@@ -25,7 +31,12 @@
                 <a href="#">
                     <i class="fa fa-trash-o"></i>Trash
                     <span>
-                        @(Model == null ? 0 : Model.Data.Count())
+                        @{
+
+                            var count2 = context.Replies.
+                            Where(x => x.IsDeleted == true && x.UserId == userId).Count();
+                        }
+                        @count2
                     </span>
                 </a>
             </li>
@@ -43,7 +54,7 @@
             {
                 @foreach (var item in Model.Data)
                 {
-                    <div class="inbox-row widget-shadow">
+                    <div class="inbox-row widget-shadow" id="feedBox">
                         <div class="mail mail-name">
                             <h6>
                                 @(item.Subject != null ? item.Subject : "None")
@@ -71,13 +82,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="">
-                                            <i class="fa fa-download mail-icon"></i>
-                                            Archive
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="font-red" title="">
+                                        <a href="#" class="font-red" title=""
+                                           onclick="RemoveFromCard(@item.Id)">
                                             <i class="fa fa-trash-o mail-icon"></i>
                                             Delete
                                         </a>
@@ -98,8 +104,10 @@
                                     @item.Message
                                 </p>
                                 <form method="post">
-                                    <input type="text" placeholder="Reply to sender" required="">
-                                    <input type="submit" value="Send">
+                                    <input type="text" placeholder="Reply to sender"
+                                           name="Content" required="" id="text" />
+                                    <input type="submit" value="Send" 
+                                           onclick="SendMessage(@item.Id,event)" />
                                 </form>
                             </div>
                         </div>
@@ -119,3 +127,51 @@
     </div>
 </div>
 <div class="clearfix"> </div>
+
+@section Scripts{
+
+    <script>
+
+        function SendMessage(contactId, e) {
+            e.preventDefault();
+
+            var content = $("#text").val();
+
+            const dataObject = {
+                contactId: contactId,
+                content: content
+            }
+
+            $.ajax({
+                url: "/Admin/Contact/Reply",
+                type: "POST",
+                data: dataObject,
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                dataType: "json",
+                success: function (res) {
+                    if (res != null) {
+                        Swal.fire(
+                            'Sent successfully!',
+                            '',
+                            'success'
+                        )
+                        //remove
+                        RemoveFromCard(contactId)
+                    }
+                }
+            })
+        }
+
+        function RemoveFromCard(id) {
+            $.ajax({
+                url: "/Admin/Contact/DeleteFeedback",
+                type: "POST",
+                data: { id: id },
+                success: function (res) {
+                    location.reload();
+                }
+            })
+        }
+
+    </script>
+}

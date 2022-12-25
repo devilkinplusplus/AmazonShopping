@@ -6,6 +6,7 @@ using Autofac;
 using Microsoft.AspNetCore.Identity;
 using AutoMapper;
 using AmazonShopping.Business.AutoMapper;
+using Autofac.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
