@@ -107,16 +107,19 @@
                             <div class="hb-menu">
                                 <nav>
                                     <ul class="row justify-content-start">
+                                        
                                         <li class="col-1">
                                             <a href="/home/index">Home</a>
                                         </li>
-                                        <li class="dropdown-holder col-2">
+                                        <li class="dropdown-holder">
                                             <a href="index.html">Categories</a>
                                             @await Component.InvokeAsync("CategoriesInLayout")
                                         </li>
-                                        <li class="col-1"><a href="#">About</a></li>
-                                        <li class="col-2"><a href="/contact/">Contact</a></li>
-                                        <li class="col-4">
+
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                        <li class="col-5"></li>
+                                        <li class="dropdown-holder">
                                             @{
                                                 var username = User.FindFirstValue(ClaimTypes.Name);
                                                 var isUserAdmin = User.IsInRole("Admin");
@@ -126,15 +129,21 @@
                                                         @username
                                                     </a>
                                                     <ul class="hb-dropdown">
-                                                        <form method="post" action="/auth/logout" id="submit">
-                                                        <li>
-                                                            <a href="#" onclick="SubmitFunction()">Logout</a>
+                                                        <form method="post" action="/auth/logout"
+                                                          id="submit">
+                                                        <li class="text-center">
+                                                            <a href="#" onclick="SubmitFunction()"
+                                                               class="btn btn-light btn-sm btn-block">
+                                                                Logout
+                                                            </a>
                                                         </li>
                                                         </form>
                                                         @if (isUserAdmin)
                                                         {
                                                             <li>
-                                                                <a href="/admin/admin">Admin Panel</a>
+                                                                <a href="/admin/admin"
+                                                                   class="btn btn-light btn-sm btn-block"
+                                                                   >Admin Panel</a>
                                                             </li>
                                                         }
                                                     </ul>
@@ -149,6 +158,7 @@
                                                 }
                                             }
                                         </li>
+                     
                                     </ul>
                                 </nav>
                             </div>

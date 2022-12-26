@@ -25,7 +25,12 @@
                                     {
                                         userRole += role + " ";
                                     }
-                                    @userRole
+                                    
+                                    string[] rolesOfUser = userRole.Split(" ");
+                                    foreach (var rol in rolesOfUser)
+                                    {
+                                        <span class="badge badge-success">@rol</span>
+                                    }
                                 }
                             </td>
                             <td>
