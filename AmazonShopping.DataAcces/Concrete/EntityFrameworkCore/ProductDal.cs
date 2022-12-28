@@ -4,6 +4,7 @@ using AmazonShopping.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -15,11 +16,28 @@ namespace AmazonShopping.DataAcces.Concrete.EntityFrameworkCore
     public class ProductDal : EfRepositoryBase<Product, AppDbContext>, IProductDal
     {
 
-        public IEnumerable<Product> GetAllProducts(Expression<Func<Product, bool>>? filter)
+        public IEnumerable<Product> GetAllProducts(int Page, int Size,
+            Expression<Func<Product, bool>>? filter=null)
         {
             using var context = new AppDbContext();
-            return context.Products.Include(x => x.Category).Include(x => x.Catalog).Where(filter)
+            var values= context.Products.Include(x => x.Category)
+                .Where(filter)
+                .Include(x => x.Catalog)
+                .OrderBy(x=>x.Category)
+                .Skip((Page-1)*Size)
+                .Take(Size)
                 .ToList();
+            return values;
+        }
+
+        public IEnumerable<Product> GetAllProducts(Expression<Func<Product, bool>>? filter = null)
+        {
+            using var context = new AppDbContext();
+            var values = context.Products.Include(x => x.Category)
+                .Where(filter)
+                .Include(x => x.Catalog)
+                .ToList();
+            return values;
         }
 
         public Product GetProduct(Expression<Func<Product, bool>>? filter)

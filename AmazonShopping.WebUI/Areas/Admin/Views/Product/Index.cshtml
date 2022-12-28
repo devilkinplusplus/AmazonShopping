@@ -36,7 +36,6 @@
                                 </td>
                             </tr>
                         }
-
                     </tbody>
                 </table>
             }
@@ -51,5 +50,12 @@
         <div class="mt-2">
             <a href="/admin/product/create" class="btn btn-success">New Product</a>
         </div>
+        @if (Model != null)
+        {
+            <ul class="pagination pagination-lg">
+                @Html.PagedListPager((IPagedList)Model.Data,page=>Url.Action("Index",new {page}))
+            </ul>
+        }
+
     </div>
 </div>

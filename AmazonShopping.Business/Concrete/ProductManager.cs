@@ -11,12 +11,14 @@ using AutoMapper;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using X.PagedList;
 using static AmazonShopping.Entities.DTOs.ProductDTO;
 
 namespace AmazonShopping.Business.Concrete
@@ -99,11 +101,12 @@ namespace AmazonShopping.Business.Concrete
             }
         }
 
-        public IDataResult<IEnumerable<Product>> GetAllActiveProducts()
+        public IDataResult<IEnumerable<Product>> GetAllActiveProducts(int size, int page = 1)
         {
             try
             {
-                var data = _productDal.GetAllProducts(x => x.IsDeleted == false);
+                var data = _productDal.GetAllProducts(x => x.IsDeleted == false)
+                                      .ToPagedList(page, size);
 
                 if (data.Count() != 0)
                     return new SuccessDataResult<IEnumerable<Product>>(data);
@@ -120,6 +123,23 @@ namespace AmazonShopping.Business.Concrete
             try
             {
                 var data = _productDal.GetAllProducts();
+                if (data.Count() != 0)
+                    return new SuccessDataResult<IEnumerable<Product>>(data);
+                return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);
+            }
+            catch (Exception ex)
+            {
+                return new ErrorDataResult<IEnumerable<Product>>(ex.Message);
+            }
+
+        }
+
+        public IDataResult<IEnumerable<Product>> GetAllProducts(int id, int size, int page = 1)
+        {
+            try
+            {
+                var data = _productDal.GetAllProducts(x => x.IsDeleted == false && x.CategoryId == id)
+                                        .ToPagedList(page, size);
                 if (data.Count() != 0)
                     return new SuccessDataResult<IEnumerable<Product>>(data);
                 return new ErrorDataResult<IEnumerable<Product>>(Messages.CannotBeNull);

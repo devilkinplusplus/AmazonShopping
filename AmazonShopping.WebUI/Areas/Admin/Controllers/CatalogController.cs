@@ -16,9 +16,9 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
             _catalogService = catalogService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            var values = _catalogService.GetAllCatalogs();
+            var values = _catalogService.GetAllCatalogs(10,page);
             if(values.Success)
                 return View(values);
             return View();

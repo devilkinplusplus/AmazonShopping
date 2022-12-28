@@ -1,0 +1,17 @@
+﻿@model IDataResult<IEnumerable<Catalog>>
+
+@if (Model != null)
+{
+    <ul class="li-blog-archive">
+        @foreach (var item in Model.Data)
+        {
+            <li><a href="#">@item.Name</a></li>
+        }
+    </ul>
+}
+else
+{
+    <ul class="li-blog-archive">
+        <li><a href="#">Nothing here</a></li>
+    </ul>
+}

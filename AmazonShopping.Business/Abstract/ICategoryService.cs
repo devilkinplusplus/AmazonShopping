@@ -11,6 +11,7 @@ namespace AmazonShopping.Business.Abstract
     public interface ICategoryService
     {
         IDataResult<IEnumerable<Category>> GetCategories();
+        IDataResult<IEnumerable<Category>> GetCategories(int size,int page);
         IDataResult<Category> GetCategoryById(int id);
         IResult CreateCategory(Category category);
         IResult EditCategory(Category category);

@@ -3,6 +3,7 @@ using AmazonShopping.WebUI.Areas.Admin.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
 
 namespace AmazonShopping.WebUI.Areas.Admin.Controllers
 {

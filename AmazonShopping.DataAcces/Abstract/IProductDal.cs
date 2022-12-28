@@ -11,6 +11,7 @@ namespace AmazonShopping.DataAcces.Abstract
 {
     public interface IProductDal:IRepositoryBase<Product>
     {
+        IEnumerable<Product> GetAllProducts(int Page, int Size,Expression<Func<Product, bool>>? filter=null);
         IEnumerable<Product> GetAllProducts(Expression<Func<Product, bool>>? filter=null);
         Product GetProduct(Expression<Func<Product, bool>>? filter);
         IEnumerable<Product> NewProducts();

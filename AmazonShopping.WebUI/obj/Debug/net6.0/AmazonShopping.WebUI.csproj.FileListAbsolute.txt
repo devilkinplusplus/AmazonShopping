@@ -291,3 +291,7 @@ C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\MailKit.dll
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\MimeKit.dll
 C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\LazZiya.TagHelpers.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\user\source\repos\AmazaonShopping\AmazonShopping.WebUI\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
