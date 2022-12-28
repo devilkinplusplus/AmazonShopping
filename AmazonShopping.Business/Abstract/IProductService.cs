@@ -13,9 +13,10 @@ namespace AmazonShopping.Business.Abstract
     {
         IDataResult<Product> GetProduct(int id);
         IDataResult<IEnumerable<Product>> GetAllProducts();
-        IDataResult<IEnumerable<Product>> GetAllActiveProducts();
-        IResult CreateProduct(CreateProductDTO product,string userId);
-        IResult EditProduct(EditProductDTO product,string userId);
+        IDataResult<IEnumerable<Product>> GetAllProducts(int id, int size, int page);
+        IDataResult<IEnumerable<Product>> GetAllActiveProducts(int size, int page);
+        IResult CreateProduct(CreateProductDTO product, string userId);
+        IResult EditProduct(EditProductDTO product, string userId);
         IResult DeleteProduct(Product product);
         IDataResult<IEnumerable<Product>> NewProducts();
         IDataResult<IEnumerable<Product>> TrendingProducts();

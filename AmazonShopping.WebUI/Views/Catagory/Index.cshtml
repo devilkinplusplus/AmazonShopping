@@ -1,0 +1,102 @@
+﻿@model IDataResult<IEnumerable<Product>>
+@{
+    int pageNo = 1;
+}
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Categories</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="li-main-blog-page pt-60 pb-55">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 order-lg-1 order-2">
+                <div class="li-blog-sidebar-wrapper">
+                    <h4 class="li-blog-sidebar-title">Categories</h4>
+                    <div class="li-blog-sidebar pt-25">
+                        <!-- Catalogs -->
+                        @await Component.InvokeAsync("CatalogList")
+                    </div>
+                    <div class="li-blog-sidebar">
+                        <h4 class="li-blog-sidebar-title">Tags</h4>
+                        <ul class="li-blog-tags">
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Reading</a></li>
+                            <li><a href="#">Shopping</a></li>
+                            <li><a href="#">Touchscreen</a></li>
+                            <li><a href="#">Ultrabooks</a></li>
+                            <li><a href="#">Sound Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 order-lg-2 order-1">
+                <div class="row li-main-content">
+                    @foreach (var item in Model.Data)
+                    {
+                        <div class="col-lg-12">
+                            <div class="li-blog-single-item mb-30">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="li-blog-banner">
+
+                                            <!-- a tag-->
+                                        @item.Name
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="li-blog-content">
+                                            <div class="li-blog-details">
+                                                <h3 class="li-blog-heading pt-xs-25 pt-sm-25">
+                                                    <a href="blog-details-left-sidebar.html">
+                                                        @item.Title
+                                                    </a>
+                                                </h3>
+                                                <div class="li-blog-meta">
+                                                    <a class="author" href="#">
+                                                        <i class="fa fa-user"></i>Admin
+                                                    </a>
+                                                    <a class="author" href="#">
+                                                        <i class="fa fa-mouse-pointer"></i>@item.Hit
+                                                    </a>
+                                                    <a class="author" href="#">
+                                                        <i class="fa fa-map-o"></i>@item.Catalog.Name
+                                                    </a>
+                                                    @{
+                                                        pageNo++;
+                                                    }
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    @if (Model != null)
+                    {
+                        <div class="col-lg-12">
+                            <div class="li-paginatoin-area text-center pt-25">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="li-pagination-box">
+                                            @Html.PagedListPager((IPagedList)Model.Data,
+                                                page=>Url.Action("Index",new {page}))
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

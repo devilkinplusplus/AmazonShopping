@@ -47,5 +47,11 @@
         <div class="mt-2">
             <a href="/admin/category/create" class="btn btn-success">New Category</a>
         </div>
+        @if (Model != null)
+        {
+            <ul class="pagination pagination-lg">
+                @Html.PagedListPager((IPagedList)Model.Data,page=>Url.Action("Index",new {page}))
+            </ul>
+        }
     </div>
 </div>

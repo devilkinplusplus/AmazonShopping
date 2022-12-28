@@ -17,10 +17,10 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
             _categoryService = categoryService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var values = _categoryService.GetCategories();
-            if(values.Success)
+            var values = _categoryService.GetCategories(10,page);
+            if (values.Success)
                 return View(values);
             return View();
         }

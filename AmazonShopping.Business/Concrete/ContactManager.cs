@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using X.PagedList;
 
 namespace AmazonShopping.Business.Concrete
 {
@@ -40,11 +41,11 @@ namespace AmazonShopping.Business.Concrete
             }
         }
 
-        public IDataResult<IEnumerable<Contact>> GetFeedbacks()
+        public IDataResult<IEnumerable<Contact>> GetFeedbacks(int size, int page)
         {
             try
             {
-                var values = _contactDal.GetAll(x => x.IsDeleted == false);
+                var values = _contactDal.GetAll(x => x.IsDeleted == false).ToPagedList(page,size);
                 if (values.Count() != 0)
                     return new SuccessDataResult<IEnumerable<Contact>>(values);
                 return new ErrorDataResult<IEnumerable<Contact>>(Messages.CannotBeNull);

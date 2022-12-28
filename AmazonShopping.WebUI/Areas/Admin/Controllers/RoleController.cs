@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
 
 namespace AmazonShopping.WebUI.Areas.Admin.Controllers
 {
@@ -15,9 +16,9 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
             _roleManager = roleManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var values = _roleManager.Roles.ToList();
+            var values = _roleManager.Roles.ToList().ToPagedList(page,10);
             return View(values);
         }
 

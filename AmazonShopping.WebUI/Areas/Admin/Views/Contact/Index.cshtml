@@ -106,7 +106,7 @@
                                 <form method="post">
                                     <input type="text" placeholder="Reply to sender"
                                            name="Content" required="" id="text" />
-                                    <input type="submit" value="Send" 
+                                    <input type="submit" value="Send"
                                            onclick="SendMessage(@item.Id,event)" />
                                 </form>
                             </div>
@@ -124,6 +124,12 @@
                 </div>
             }
         </div>
+        @if (Model != null)
+        {
+            <ul class="pagination pagination-lg">
+                @Html.PagedListPager((IPagedList)Model.Data,page=>Url.Action("Index",new {page}))
+            </ul>
+        }
     </div>
 </div>
 <div class="clearfix"> </div>

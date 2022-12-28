@@ -10,7 +10,7 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface IContactService
     {
-        IDataResult<IEnumerable<Contact>> GetFeedbacks();
+        IDataResult<IEnumerable<Contact>> GetFeedbacks(int size,int page);
         IDataResult<Contact> SendFeedback(Contact contact);
         IDataResult<Contact> DeleteFeedback(int id);
     }

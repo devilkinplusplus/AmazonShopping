@@ -41,5 +41,12 @@
         <div class="mt-2">
             <a href="/admin/role/create" class="btn btn-success">New Role</a>
         </div>
+        @if (Model != null)
+        {
+            <ul class="pagination pagination-lg">
+                @Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new {page}))
+            </ul>
+        }
+
     </div>
 </div>

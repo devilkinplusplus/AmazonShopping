@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using X.PagedList;
 
 namespace AmazonShopping.Business.Concrete
 {
@@ -66,6 +67,23 @@ namespace AmazonShopping.Business.Concrete
             }
         }
 
+        public IDataResult<IEnumerable<Catalog>> GetAllCatalogs(int size, int page)
+        {
+            try
+            {
+                var values = _catalogDal.GetAll(x => x.IsDeleted == false).ToPagedList(page,size);
+                if (values.Count() != 0)
+                {
+                    return new SuccessDataResult<IEnumerable<Catalog>>(values);
+                }
+                return new ErrorDataResult<IEnumerable<Catalog>>(Messages.CannotBeNull);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public IDataResult<IEnumerable<Catalog>> GetAllCatalogs()
         {
             try
@@ -82,7 +100,6 @@ namespace AmazonShopping.Business.Concrete
                 throw new Exception(ex.Message);
             }
         }
-
         public IDataResult<Catalog> GetCatalogById(int id)
         {
             try

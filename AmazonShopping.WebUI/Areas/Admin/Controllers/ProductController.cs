@@ -5,8 +5,11 @@ using AmazonShopping.Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Drawing.Printing;
 using System.Security.Claims;
+using X.PagedList;
 using static AmazonShopping.Entities.DTOs.ProductDTO;
 
 namespace AmazonShopping.WebUI.Areas.Admin.Controllers
@@ -23,10 +26,10 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var result = _productService.GetAllActiveProducts();
-            if(result.Success)
+            var result = _productService.GetAllActiveProducts(10, page);
+            if (result.Success)
                 return View(result);
             return View();
         }
@@ -56,7 +59,7 @@ namespace AmazonShopping.WebUI.Areas.Admin.Controllers
         public IActionResult Edit(EditProductDTO model)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            _productService.EditProduct(model,userId);
+            _productService.EditProduct(model, userId);
             return RedirectToAction(nameof(Index));
         }
 

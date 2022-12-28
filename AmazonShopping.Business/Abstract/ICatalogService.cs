@@ -10,6 +10,7 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface ICatalogService
     {
+        IDataResult<IEnumerable<Catalog>> GetAllCatalogs(int size,int page);
         IDataResult<IEnumerable<Catalog>> GetAllCatalogs();
         IResult CreateCatalog(Catalog catalog);
         IDataResult<Catalog> GetCatalogById(int id);

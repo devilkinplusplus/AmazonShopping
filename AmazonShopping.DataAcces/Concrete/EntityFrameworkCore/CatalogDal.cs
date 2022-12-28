@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace AmazonShopping.DataAcces.Concrete.EntityFrameworkCore
 {
-    public class CatalogDal:EfRepositoryBase<Catalog,AppDbContext>,ICatalogDal
+    public class CatalogDal : EfRepositoryBase<Catalog, AppDbContext>, ICatalogDal
     {
+        
     }
 }
