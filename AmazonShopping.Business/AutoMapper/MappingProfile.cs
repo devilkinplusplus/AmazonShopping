@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static AmazonShopping.Entities.DTOs.ContactDTO;
 using static AmazonShopping.Entities.DTOs.ProductDTO;
+using static AmazonShopping.Entities.DTOs.UserDTO;
 
 namespace AmazonShopping.Business.AutoMapper
 {
@@ -22,6 +23,7 @@ namespace AmazonShopping.Business.AutoMapper
             CreateMap<EditProductDTO, Product>().ReverseMap();
             CreateMap<AddToFavourits,Favourit>().ReverseMap();
             CreateMap<ReplyDTO, Reply>().ReverseMap();
+            CreateMap<EditUserDTO,User>().ReverseMap();
         }
     }
 }

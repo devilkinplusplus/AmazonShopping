@@ -48,9 +48,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a class="navbar-brand" href="#"><span class="fa fa-area-chart"></span> 
+                        <h1>
+                            <a class="navbar-brand" href="#">
+                                <span class="fa fa-area-chart"></span>
                                 DEVILKIN
-                            <span class="dashboard_text">Admin Page</span></a></h1>
+                                <span class="dashboard_text">Admin Page</span>
+                            </a>
+                        </h1>
                     </div>
 
                     <!--SideBar-->
@@ -99,6 +103,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                             <li class="treeview">
                                 <a href="/admin/contact">
                                     <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                                </a>
+                            </li>
+                            <li class="treeview">
+                                <a href="/admin/profile">
+                                    <i class="fa fa-user"></i> <span>Account</span>
                                 </a>
                             </li>
                             <li class="treeview">
@@ -284,13 +293,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         <li class="dropdown profile_details_drop">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <div class="profile_img">
-                                    <span class="prfil-img"><img src="images/2.jpg" alt=""> </span>
                                     <div class="user-name">
                                         <p>
                                             @{
                                                 var usId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                                                 var adminName = context.Users
-                                                        .FirstOrDefault(x => x.Id == usId).Firstname;
+                                                .FirstOrDefault(x => x.Id == usId).Firstname;
                                             }
                                             @adminName
                                         </p>
@@ -302,10 +310,26 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </a>
                             <ul class="dropdown-menu drp-mnu">
-                                <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
-                                <li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li>
-                                <li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li>
-                                <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                <li>
+                                    <a href="/admin/profile/settings">
+                                        <i class="fa fa-cog"></i> Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin/profile/index">
+                                        <i class="fa fa-user"></i> My Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <form method="post" action="/auth/logout" id="form-id">
+                                            <p onclick="document.getElementById('form-id').submit();">
+                                                <i class="fa fa-sign-out">
+                                                </i> Logout
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

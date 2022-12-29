@@ -24,8 +24,7 @@ builder.Services.AddIdentity<User,IdentityRole>(opt =>
     opt.Password.RequireLowercase = false;
     opt.Password.RequireDigit = false;
     opt.Password.RequiredLength = 6;
-}).
-    AddEntityFrameworkStores<AppDbContext>();
+}).AddEntityFrameworkStores<AppDbContext>();
 
 builder.Services.AddDbContext<AppDbContext>();
 
