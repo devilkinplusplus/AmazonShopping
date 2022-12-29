@@ -84,7 +84,8 @@
                                                 Where(x => x.UserId == userId && x.IsDeleted == false).
                                                 Count();
                                             }
-                                            <span class="cart-item-count wishlist-item-count">@count</span>
+                                            <span class="cart-item-count wishlist-item-count">@count
+                                            </span>
                                             <i class="fa fa-heart-o"></i>
                                         </a>
                                     </li>
@@ -132,7 +133,8 @@
                                                         <form method="post" action="/auth/logout"
                                                           id="submit">
                                                         <li class="text-center">
-                                                            <a href="#" onclick="SubmitFunction()"
+                                                            <a href="#"
+                                                               onclick="document.getElementById('submit').submit();"
                                                                class="btn btn-light btn-sm btn-block">
                                                                 Logout
                                                             </a>
@@ -450,12 +452,7 @@
     <script src="~/eTemplate/js/scrollUp.min.js"></script>
     <!-- Main/Activator js -->
     <script src="~/eTemplate/js/main.js"></script>
-    <!-- Submit logout form -->
-    <script>
-        function SubmitFunction() {
-            document.getElementById("submit").submit();
-        }
-    </script>
+
 </body>
 
 </html>
