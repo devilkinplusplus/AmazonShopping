@@ -1,0 +1,112 @@
+﻿@model IDataResult<IEnumerable<Favourit>>
+@inject AppDbContext context
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Profile</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@{
+    var id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var fName = context.Users.FirstOrDefault(x => x.Id == id).Firstname;
+    var lName = context.Users.FirstOrDefault(x => x.Id == id).Lastname;
+    var email= context.Users.FirstOrDefault(x => x.Id == id).Email;
+}
+
+<div class="checkout-area pt-60 pb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <form action="#">
+                    <div class="checkbox-form">
+                        <h3>Your Informations</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="checkout-form-list">
+                                    <label>First Name <span class="required">*</span></label>
+                                    <input placeholder="" type="text" readonly value="@fName"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkout-form-list">
+                                    <label>Last Name <span class="required">*</span></label>
+                                    <input placeholder="" type="text" readonly value="@lName" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="checkout-form-list">
+                                    <label>Email Address <span class="required">*</span></label>
+                                    <input placeholder="" type="email" readonly value="@email" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="your-order">
+                    <h3>Your wishlist</h3>
+                    <div class="your-order-table table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="cart-product-name">Product</th>
+                                    <th class="cart-product-total">Catagory</th>
+                                    <th class="cart-product-total">Catalog</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null)
+                                {
+
+                                    @foreach (var item in Model.Data)
+                                    {
+                                        <tr class="cart_item">
+                                            <td class="cart-product-name">
+                                                @item.Product.Title
+                                                <strong class="product-quantity"> × 1</strong>
+                                            </td>
+                                            <td class="cart-product-total">
+                                                <span class="amount">
+                                                    @item.Product.Category.Name
+                                                </span>
+                                            </td>
+                                            <td class="cart-product-total">
+                                                <span class="amount">
+                                                    @item.Product.Catalog.Name
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <h2 class="lead">No item in wishlist</h2>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="payment-method">
+                        <div class="payment-accordion">
+                            <div class="order-button-payment">
+                                <a href="/cart/index" 
+                                class="btn btn-warning btn-block btn-large">Go Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
