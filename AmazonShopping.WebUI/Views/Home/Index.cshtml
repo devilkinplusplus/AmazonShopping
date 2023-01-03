@@ -25,7 +25,7 @@
                                     <div class="single-product-wrap">
                                         <h4>
                                             <a class="product_name" id="product_name_@item.Id"
-                                               href="single-product.html">
+                                               href="#">
                                                 @item.Title
                                             </a>
                                         </h4>
@@ -51,7 +51,7 @@
                                             <ul class="add-actions-link">
                                                 <li>
                                                     <a class="links-details"
-                                                       href="#" onclick="AddToFavourits(@item.Id)">
+                                                       href="#" onclick="AddToFavourits(@item.Id,event)">
                                                         <i class="fa fa-heart-o"></i>
                                                     </a>
                                                 </li>
@@ -147,12 +147,24 @@
 <!-- Li's Trending Product Area End Here -->
 @section Scripts{
     <script>
-        function AddToFavourits(productId) {
 
+        function IncreaseHitCount(id) {
+            $.ajax({
+                url: "/Home/IncreaseHit",
+                type: "POST",
+                data: { id: id },
+                success: function (res) {
+                    if (res != null) {
+                        console.log(res);
+                    }
+                }
+            })
+        }
+
+        function AddToFavourits(productId) {
             const dataObject = {
                 ProductId: productId,
             }
-            console.log(dataObject)
             $.ajax({
                 url: "/Home/AddToFavourits",
                 type: "POST",
@@ -164,9 +176,13 @@
                             '',
                             'success'
                         )
+                        IncreaseHitCount(productId);
                     }
                 }
             })
         }
+
+
+
     </script>
 }
