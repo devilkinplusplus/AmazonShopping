@@ -11,6 +11,7 @@ namespace AmazonShopping.Business.Abstract
 {
     public interface IProductService
     {
+        IDataResult<Product> IncreaseHit(int id,int num);
         IDataResult<Product> GetProduct(int id);
         IDataResult<IEnumerable<Product>> GetAllProducts();
         IDataResult<IEnumerable<Product>> GetAllProducts(int id, int size, int page);

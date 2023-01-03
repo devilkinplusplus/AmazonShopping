@@ -166,6 +166,21 @@ namespace AmazonShopping.Business.Concrete
             }
         }
 
+        public IDataResult<Product> IncreaseHit(int id,int num)
+        {
+            try
+            {
+                var data = _productDal.Get(x => x.Id == id);
+                data.Hit += num;
+                _productDal.Update(data);
+                return new SuccessDataResult<Product>(data);
+            }
+            catch (Exception e)
+            {
+                return new ErrorDataResult<Product>(e.Message);
+            }
+        }
+
         public IDataResult<IEnumerable<Product>> NewProducts()
         {
             try

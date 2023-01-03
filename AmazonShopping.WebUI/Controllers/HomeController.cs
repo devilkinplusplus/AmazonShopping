@@ -45,6 +45,14 @@ namespace AmazonShopping.WebUI.Controllers
             return Json(null);
         }
 
+        [HttpPost]
+        public JsonResult IncreaseHit(int id)
+        {
+            var result = _productService.IncreaseHit(id, 2);
+            if (result.Success)
+                return Json(result);
+            return Json(null);
+        }
 
     }
 }
