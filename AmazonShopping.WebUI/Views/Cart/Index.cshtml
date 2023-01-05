@@ -41,9 +41,14 @@
                                                         <i class="fa fa-times"></i>
                                                     </a>
                                                 </td>
-
+                                                @if (item.Product.ImageLink == null)
+                                                {
+                                                    <td class="li-product-name">
+                                                        <a href="#">@item.Product.Title</a>
+                                                    </td>
+                                                }
                                                 <td class="li-product-name">
-                                                    <a href="#">@item.Product.Title</a>
+                                                    @Html.Raw(item.Product.ImageLink)
                                                 </td>
                                                 <td class="li-product-name">
                                                     <a href="#">@item.Product.Category.Name</a>

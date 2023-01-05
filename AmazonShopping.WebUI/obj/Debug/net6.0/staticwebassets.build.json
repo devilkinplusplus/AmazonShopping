@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "42oHT3A8AAMqLK9Sy1A9OT84m5kH0/Lj1M6QxRGYDtc=",
+  "Hash": "78QLH3NUFmTn8s618kei1VKIje9ageden64NGhlRZUY=",
   "Source": "AmazonShopping.WebUI",
   "BasePath": "_content/AmazonShopping.WebUI",
   "Mode": "Default",
@@ -3944,6 +3944,40 @@
       "OriginalItemSpec": "wwwroot\\eTemplate\\images\\banner\\featured-banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\iDwDQ4o.png",
+      "SourceId": "AmazonShopping.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\",
+      "BasePath": "_content/AmazonShopping.WebUI",
+      "RelativePath": "eTemplate/images/banner/iDwDQ4o.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\eTemplate\\images\\banner\\iDwDQ4o.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\tVBy5Q0.png",
+      "SourceId": "AmazonShopping.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\",
+      "BasePath": "_content/AmazonShopping.WebUI",
+      "RelativePath": "eTemplate/images/banner/tVBy5Q0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\eTemplate\\images\\banner\\tVBy5Q0.png"
+    },
+    {
       "Identity": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\bg-banner\\1.jpg",
       "SourceId": "AmazonShopping.WebUI",
       "SourceType": "Discovered",
@@ -4333,6 +4367,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\eTemplate\\images\\menu\\logo\\2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\logo\\IlkRam-removebg-preview (1).png",
+      "SourceId": "AmazonShopping.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\",
+      "BasePath": "_content/AmazonShopping.WebUI",
+      "RelativePath": "eTemplate/images/menu/logo/IlkRam-removebg-preview (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\eTemplate\\images\\menu\\logo\\IlkRam-removebg-preview (1).png"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\payment\\1.png",
