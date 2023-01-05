@@ -212,6 +212,9 @@ namespace AmazonShopping.DataAcces.Migrations
                     b.Property<int>("Hit")
                         .HasColumnType("int");
 
+                    b.Property<string>("ImageLink")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 

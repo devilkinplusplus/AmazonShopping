@@ -44,6 +44,7 @@ namespace AmazonShopping.Business.Concrete
                 mapper.CategoryId = product.categoryId;
                 mapper.CatalogId = product.catalogId;
                 mapper.Hit = product.hit;
+                mapper.ImageLink = product.imageLink;
                 ProductValidator validations = new ProductValidator();
                 ValidationResult result = validations.Validate(mapper);
                 if (result.IsValid)
@@ -85,6 +86,7 @@ namespace AmazonShopping.Business.Concrete
                 data.Name = product.name;
                 data.CategoryId = product.categoryId;
                 data.CatalogId = product.catalogId;
+                data.ImageLink = product.imageLink;
 
                 ProductValidator validations = new ProductValidator();
                 ValidationResult result = validations.Validate(data);

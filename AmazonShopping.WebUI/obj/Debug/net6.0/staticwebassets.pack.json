@@ -685,6 +685,14 @@
       "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\featured-banner.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\iDwDQ4o.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\iDwDQ4o.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\banner\\tVBy5Q0.png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\banner\\tVBy5Q0.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\bg-banner\\1.jpg",
       "PackagePath": "staticwebassets\\eTemplate\\images\\bg-banner\\1.jpg"
     },
@@ -775,6 +783,10 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\logo\\2.jpg",
       "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\logo\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\menu\\logo\\IlkRam-removebg-preview (1).png",
+      "PackagePath": "staticwebassets\\eTemplate\\images\\menu\\logo\\IlkRam-removebg-preview (1).png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\AmazaonShopping\\AmazonShopping.WebUI\\wwwroot\\eTemplate\\images\\payment\\1.png",

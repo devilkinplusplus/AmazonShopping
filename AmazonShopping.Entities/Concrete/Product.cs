@@ -13,6 +13,7 @@ namespace AmazonShopping.Entities.Concrete
         public int Id { get; set; }
         public string Title { get; set; }
         public string Name { get; set; }
+        public string? ImageLink { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }
         public int CategoryId{ get; set; }
